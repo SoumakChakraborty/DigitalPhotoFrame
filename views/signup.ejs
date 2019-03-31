@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Sign Up page
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="/Check.js"></script>
+    </head>
+    <body>  
+     <div id="signupdiv">
+         <h1>Sign Up</h1>
+     </div>
+     <%if(error&&error.length>0){%>
+        <div id="showerror"><%=error%></div>
+      <%}%>   
+      <div id="formelementdiv1">  
+        <form action="/signup" method="POST" onsubmit="return check()">
+        <input type="text"  name="firstname" id="fname" placeholder="Firstname" required><br>
+        <input type="text"  name="lastname" id="lname" placeholder="Lastname" required><br>   
+         <input type="email"  name="username" id="userid" placeholder="Email" required><br>
+         <input type="password"  name="password" id="password" placeholder="Password" required><br>
+         <input type="password"  name="confirm"  id="retypepassword" placeholder="Renter Password" required><br>
+         <input type="submit" value="Sign Up" id="submit">
+        </form>
+      </div> 
+    </body>
+</html>

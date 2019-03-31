@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Details page
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="dig">Digital photo Frame</h1>
+        <%if(msg&&msg.length>0&&c==1){%>
+          <div id="showmsg"><%=msg%></div>
+        <%}%> 
+        <%if(error&&error.length>0){%>
+          <div id="showerror"><%=error%></div>
+        <%}%>
+      <div id="formelementdiv">  
+        <form action="/signin" method="POST">
+         <input type="image" src="https://cdn3.iconfinder.com/data/icons/faticons/32/user-01-128.png" id="userimg"><br>   
+         <input type="email"  name="username" id="userid" placeholder="Email" required><br>
+         <input type="password"  name="password" id="password" placeholder="Password" required><br>
+         <input type="submit" value="Sign In" id="submit">
+        </form>
+        <div id="other">
+        <a href="#" class="formanchor">Forgot password?</a>
+        <a href="/signup" class="formanchor" id="newuser">New user?Sign Up here!</a>    
+        </div>
+      </div> 
+    </body>
+</html>

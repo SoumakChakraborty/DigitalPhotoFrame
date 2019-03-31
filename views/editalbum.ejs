@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            Edit album page
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Edit Album</h1>
+       <div id="formelementdiv"> 
+        <form action="/Edit/<%=result[0].user%>/<%=result[0].album_name%>?_method=PUT" method="POST">
+         <input type="text" name="albumname" id="fname" value="<%=result[0].album_name%>"><br>
+         <textarea name="albumdescription" id="album-description"><%=result[0].description%></textarea>
+         <input type="Submit" id="submit" value="Update Album">
+        </form>
+    </div>
+    </body>
+</html>

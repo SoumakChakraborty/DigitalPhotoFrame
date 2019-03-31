@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            User page
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+    <body id="userbody">
+        <div id="showuserdiv">
+          <div id="inter">
+              <p><a href="/" id="showpro">Digital Photo Frame</a></p>
+              <div id="usernameshowdiv">
+              <a href="#" id="usernameshow"><%=username%></a>
+              </div>
+          </div> 
+            <div class="user-items">
+                <ul id="list">
+                    <li class="userlist" id="toplist"><a href="#" class="test">Edit Profile</a></li>
+                    <li class="userlist" id="midlist"><a href="#" class="test">Change Password</a></li>
+                    <li class="userlist" id="midmidlist"><a href="#" class="test">About</a></li>
+                    <li class="userlist" id="bottomlist"><a href="/signout" class="test">Sign Out</a></li>
+                </ul>
+            </div>
+          </div>  
+        </div>
+    <div id="allitems">
+            <div id="albumdiv1">
+               <a href="/create/album" id="create-album">Create a new album</a>
+            </div>  
+        <%if(album.length>0){%>
+          <h1 id="album-list">Your albums</h1>
+          <%for(var i=0;i<album.length;i++){%>
+              <div id="collections">
+                 <div id="collections-show">
+                     <p><strong>Album name</strong>- <%=album[i].album_name%> </p>
+                     <p><strong>Description</strong> - <%=album[i].description.substring(0,album[i].description.length/2)%> ...</p>
+                     <p><strong>Created on</strong>- <%=album[i].created%></p>
+                     <div id="view-albums-div">
+                     <a href="/show/album/<%=album[i].user%>/<%=album[i].album_name%>" id="view-albums">View More</a>
+                    </div>
+                 </div>  
+              </div>
+           <%}%>   
+        <%}%>
+    </div>   
+        <script src="/listshow.js"></script>
+    </body>
+</html>

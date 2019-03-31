@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Photos page
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+    <body id="userbody">   
+    <div id="allitems">
+        <div id="album-options">
+            <div id="albumdiv">
+               <a href="/create/photo/<%=username%>/<%=album[0].album_name%>" id="create-album">Add a new photo</a>
+            </div>
+            <div id="editalbumdiv">
+                <a href="/Edit/<%=username%>/<%=album[0].album_name%>" id="Edit-album">Edit album</a>
+            </div>
+            <div id="delalbumdiv">
+            <form action="/Delete/<%=username%>/<%=album[0].album_name%>?_method=PUT" method="POST">
+               <input type="submit" value="Delete album" id="Delete-album"> 
+            </form>  
+            </div>
+           </div>  
+          <h1><%=album[0].album_name%></h1>
+          <p><%=album[0].description%></p>
+        <%if(count>0){%>
+          <h2 id="album-list">Your photos</h2>
+          <%for(var i=0;i<result.length;i++){%>
+              <div id="collections-photos">
+                 <div id="collections-show-photos">
+                    <img src="/uploads/<%=result[i].photo_name%>" id="imageshow"> 
+                     <div id="view-photos-div">
+                     <a href="#" id="view-photos">View More</a>
+                    </div>
+                 </div>  
+              </div>
+           <%}%>   
+        <%}%>
+    </div>
+    <div id="gobackdiv">   
+    <a href="/showuser" id="goback">Go back</a>
+    </div>
+    </body>
+</html>

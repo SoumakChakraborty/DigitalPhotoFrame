@@ -1,0 +1,463 @@
+#showtitle
+{
+    color:white;
+    font-family: Open sans;
+}
+#landing
+{
+    background:url("landing.jpg");
+    background-repeat: round;
+    background-size:cover;
+    margin: 0;
+}
+.divimg
+{
+    font-family:Montserrat;
+    text-align: center;
+}
+.viewimg
+{
+    text-decoration:none;
+    color:white;
+    font-weight:800;
+}
+#showimg
+{
+    background: green;
+    width:120px;
+    padding:10px;
+    border:1px green solid;
+    border-radius:5px;
+    margin: auto;
+    margin-top:550px;
+    opacity:0.6;
+}
+#formelementdiv
+{
+    width:40%;
+    margin:auto;
+    margin-top:150px;
+    border:1px gainsboro solid;
+    padding: 15px;
+    border-radius:5px;
+    padding-bottom: 40px;
+}
+#formelementdiv1
+{
+    width:40%;
+    margin:auto;
+    margin-top:70px;
+    border:1px gainsboro solid;
+    padding: 15px;
+    border-radius:5px;
+    padding-bottom: 40px;
+}
+#userid
+{
+    width:80%;
+    padding:10px;
+    border:1px gainsboro solid;
+    border-radius:5px;
+    margin-left:10%;
+    margin-top:5%;
+}
+#password
+{
+    width:80%;
+    padding:10px;
+    margin-top:5%;
+    border:1px gainsboro solid;
+    border-radius:5px;
+    margin-left:10%;
+}
+#retypepassword
+{
+    width:80%;
+    padding:10px;
+    margin-top:5%;
+    border:1px gainsboro solid;
+    border-radius:5px;
+    margin-left:10%;
+}
+#fname
+{
+    width:80%;
+    padding:10px;
+    border:1px gainsboro solid;
+    border-radius:5px;
+    margin-left:10%;
+    margin-top:5%;
+}
+#filechooser
+{
+    width:80%;
+    padding:10px;
+    border:1px gainsboro solid;
+    border-radius:5px;
+    margin-left:10%;
+    margin-top:5%;
+    color:grey;
+}
+#album-description
+{
+    width:80%;
+    padding:25px;
+    border:1px gainsboro solid;
+    border-radius:5px;
+    margin-left:10%;
+    margin-top:5%;
+}
+#lname
+{
+    width:80%;
+    padding:10px;
+    margin-top:5%;
+    border:1px gainsboro solid;
+    border-radius:5px;
+    margin-left:10%;
+}
+#submit
+{
+    margin-top:5%;
+    padding:10px;
+    border:1px #4285F4 solid;
+    width:80%;
+    border-radius:5px;
+    background: white;
+    margin-left: 10%;
+    font-family:Open sans;
+    font-weight: 800;
+}
+#submit:hover
+{
+    background:rgb(142, 181, 243);
+    border:1px rgb(142, 181, 243) solid;
+}
+#other
+{
+    margin-top:5%;
+    margin-left:10%;
+}
+.formanchor
+{
+    text-decoration: none;
+    color:skyblue;
+}
+#newuser
+{
+    margin-left:5%;
+}
+#userimg
+{
+    margin-left:40%;
+    width:15%;
+    height:15%;
+}
+#dig
+{
+    font-family: Open sans;
+}
+#showmsg
+{
+    background:rgb(109, 180, 109);
+    color:green;
+    width:50%;
+    padding:15px;
+    margin: auto;
+    border-radius:5px;
+    font-family:Open sans;
+    font-weight:800;
+    opacity: .7;
+}
+#showerror
+{
+    background:rgb(223, 118, 118);
+    color:brown;
+    width:50%;
+    padding:15px;
+    margin: auto;
+    border-radius:5px;
+    font-family:Open sans;
+    font-weight:800;
+    opacity:.7;
+}
+#signupdiv
+{
+    margin:auto;
+    width:30%;
+    text-align: center;
+    margin-top:15px;
+}
+#signupdiv h1
+{
+   font-family: Open sans;
+}
+#showuserdiv
+{
+    border:1px grey solid;
+    border-radius:5px;
+    background: rgb(245, 244, 244);
+    padding-top:10px;
+    padding-right: 10px;
+    padding-bottom:10px;
+    height:25px;
+}
+#userbody
+{
+    margin:0;
+}
+#showpro
+{
+    text-decoration:none;
+    color:grey;
+    font-family:Open sans;
+    font-weight:800;
+    float: left;
+}
+#inter
+{
+    margin:0;
+}
+#showuserdiv div p
+{
+    margin-bottom:0;
+    width:150px;
+    margin-top:0;
+}
+#usernameshow
+{
+    text-decoration:none;
+    color:black;
+    font-family:Assistant;
+}
+#showuserdiv div #usernameshowdiv
+{
+    margin-left:auto;
+    border: 1px rgb(223, 223, 92) solid;
+    text-align: center;
+    padding: 5px;
+    border-radius:5px;
+    width: 150px;
+}
+.userlist
+{
+    list-style: none;
+    width:95%;
+    padding:10px;
+}
+.userlist:hover
+{
+    background:rgb(192, 192, 192);
+}
+.test
+{
+    text-decoration: none;
+    color:black;
+    font-family: Open sans;
+}
+#toplist
+{
+    border-top:2px gainsboro solid;
+    border-left:2px gainsboro solid;
+    border-right:2px gainsboro solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#midlist
+{
+    border-left:2px gainsboro solid;
+    border-right:2px gainsboro solid;
+}
+#midmidlist
+{
+    border-left:2px gainsboro solid;
+    border-right:2px gainsboro solid;
+}
+#bottomlist
+{
+    border-left:2px gainsboro solid;
+    border-right:2px gainsboro solid;
+    border-bottom:2px gainsboro solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#list
+{
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 5px;
+}
+.user-items
+{
+    width:15%;
+    margin-left:84.7%;
+    margin-top:.3%;
+    display: none;
+}
+.user-items-hover
+{
+    width:15%;
+    margin-left:84.7%;
+    margin-top:.3%;
+}
+#album-list
+{
+    width:200px;
+    margin-top:0;
+}
+#create-album
+{
+    text-decoration:none;
+    color:white;
+    font-family: Open sans;
+    margin:auto;
+}
+#Edit-album
+{
+    text-decoration:none;
+    color:white;
+    font-family: Open sans;
+    margin:auto;
+}
+#albumdiv
+{
+    background:green;
+    border:1px green solid;
+    width:160px;
+    text-align: center;
+    padding:8px;
+    border-radius:5px;
+    opacity:.7;
+     margin:auto; 
+     float: left;
+     margin-right:2%;
+}
+#albumdiv1
+{
+    background:green;
+    border:1px green solid;
+    width:160px;
+    text-align: center;
+    padding:8px;
+    border-radius:5px;
+    opacity:.7;
+     margin:auto;
+     margin-top: 2%; 
+}
+#editalbumdiv
+{
+    background:orange;
+    border:1px orange solid;
+    width:160px;
+    text-align: center;
+    padding:8px;
+    border-radius:5px;
+    opacity:.7;
+    margin:auto;
+    float: left;
+    margin-right:2%;
+}
+#delalbumdiv form
+{
+    margin-bottom: 0;
+}
+#Delete-album
+{
+    background:red;
+    border:1px red solid;
+    width:180px;
+    text-align: center;
+    padding:9px;
+    border-radius:5px;
+    opacity:.7;
+    color:white;  
+    font-family: Open sans;
+    font-size:15px;
+}
+#collections-show
+{
+    border:1px gainsboro solid;
+    border-radius: 5px;
+    width:15%;
+    padding:20px;
+    margin-left:5px;
+    float: left;
+}
+#collections-show-photos
+{
+    border:1px gainsboro solid;
+    border-radius: 5px;
+    width:20%;
+    margin-left:5px;
+    float: left;
+    padding-bottom: 5px;
+}
+#view-albums-div
+{
+    background:navy;
+    border:1px navy solid;
+    text-align: center;
+    border-radius:5px;
+    padding:15px;
+    opacity:.7;
+    width:40%;
+    margin:auto;
+}
+#view-albums
+{
+    text-decoration:none;
+    color:white;
+}
+#view-photos-div
+{
+    background:green;
+    border:1px green solid;
+    text-align: center;
+    border-radius:5px;
+    padding:15px;
+    opacity:.7;
+    width:40%;
+    margin:auto;
+    margin-top:5px;
+}
+#view-photos
+{
+    text-decoration:none;
+    color:white;
+}
+#imageshow
+{
+    width:100%;
+}
+h1
+{
+    font-family: Source sans pro;
+}
+h2
+{
+    font-family: Roboto Condensed;
+}
+p
+{
+    font-family: Raleway;
+    color:gray;
+}
+#album-options
+{
+    margin:auto;
+    margin-bottom: 3%;
+    margin-top:5%;
+    width:45%;
+}
+#goback
+{
+    text-decoration: none;
+    color:#4285F4;
+    font-family: Open sans;
+}
+#gobackdiv
+{
+    margin-top:500px;
+}

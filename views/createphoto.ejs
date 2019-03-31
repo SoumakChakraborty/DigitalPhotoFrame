@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Upload photo
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Upload photo</h1>
+    <div id="formelementdiv">
+        <form action="/create/photo/<%=user%>/<%=album%>" method="POST" enctype="multipart/form-data">
+        <input type="text" name="photoname" id="fname" placeholder="Photo Name"><br>
+        <input type="file" name="photofile" id="filechooser"><br>
+        <textarea name="photodescription" id="album-description" placeholder="Photo description"></textarea>
+        <input type="submit" value="Create photo" id="submit">
+        </form>
+    </div>
+    </body>
+</html>
