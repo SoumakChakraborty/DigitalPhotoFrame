@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=false">
     </head>
     <body id="userbody">   
     <div id="allitems">
@@ -20,7 +21,7 @@
                 <a href="/Edit/<%=username%>/<%=album[0].album_name%>" id="Edit-album">Edit album</a>
             </div>
             <div id="delalbumdiv">
-            <form action="/Delete/<%=username%>/<%=album[0].album_name%>?_method=PUT" method="POST">
+            <form action="/Delete/<%=username%>/<%=album[0].album_name%>?_method=DELETE" method="POST">
                <input type="submit" value="Delete album" id="Delete-album"> 
             </form>  
             </div>
@@ -34,7 +35,7 @@
                  <div id="collections-show-photos">
                     <img src="/uploads/<%=result[i].photo_name%>" id="imageshow"> 
                      <div id="view-photos-div">
-                     <a href="#" id="view-photos">View More</a>
+                     <a href="/show/<%=username%>/<%=result[i].album_name%>/<%=result[i].photo_name%>" id="view-photos">View More</a>
                     </div>
                  </div>  
               </div>

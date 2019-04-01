@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Change password page
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <script src="/Check.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=false">
+    </head>
+    <body>  
+     <div id="signupdiv">
+         <h1>Change password</h1>
+     </div>
+      <div id="formelementdiv1">  
+        <form action="/changepassword/<%=username%>?_method=PUT" method="POST" onsubmit="return check()">
+         <input type="password"  name="password" id="password" placeholder="New Password" required><br>
+         <input type="password"  name="confirm"  id="retypepassword" placeholder="Renter New Password" required><br>
+         <input type="submit" value="Change password" id="submit">
+        </form>
+      </div> 
+    </body>
+</html>

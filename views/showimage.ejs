@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Show image page
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body id="userbody">
+        <div id="album-options">
+            <div id="editalbumdiv">
+                <a href="/Edit/<%=username%>/<%=album%>/<%=result[0].photo_name%>" id="Edit-album">Edit photo</a>
+            </div>
+            <div id="delalbumdiv">
+            <form action="/Delete/<%=username%>/<%=album%>/<%=result[0].photo_name%>?_method=DELETE" method="POST">
+               <input type="submit" value="Delete photo" id="Delete-album"> 
+            </form>  
+            </div>
+        </div>
+        <div id="showactual">
+            <img src="/uploads/<%=result[0].photo_name%>" id="actual-image">
+            <p id="photo-name"><strong>Name</strong> - <%=result[0].photo_name%></p>
+            <p id="photo-desc"><strong>Description</strong> -<%=result[0].description%></p>
+        </div>
+        <div id="gobackdiv">   
+            <a href="/show/album/<%=username%>/<%=album%>" id="goback">Go back</a>
+        </div>
+    </body>
+</html>

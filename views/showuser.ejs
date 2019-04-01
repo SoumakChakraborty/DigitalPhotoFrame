@@ -8,20 +8,21 @@
         <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=false">
     </head>
     <body id="userbody">
         <div id="showuserdiv">
           <div id="inter">
-              <p><a href="/" id="showpro">Digital Photo Frame</a></p>
+             <div id="digitaldiv"> 
+               <a href="#" id="showpro">Digital Photo Frame</a>
+             </div> 
               <div id="usernameshowdiv">
               <a href="#" id="usernameshow"><%=username%></a>
               </div>
           </div> 
             <div class="user-items">
                 <ul id="list">
-                    <li class="userlist" id="toplist"><a href="#" class="test">Edit Profile</a></li>
-                    <li class="userlist" id="midlist"><a href="#" class="test">Change Password</a></li>
-                    <li class="userlist" id="midmidlist"><a href="#" class="test">About</a></li>
+                    <li class="userlist" id="toplist"><a href="/changepassword/<%=usermail%>" class="test">Change Password</a></li>
                     <li class="userlist" id="bottomlist"><a href="/signout" class="test">Sign Out</a></li>
                 </ul>
             </div>
